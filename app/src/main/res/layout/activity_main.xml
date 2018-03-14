@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/contenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mbs.pmdmfinal.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="207dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="76dp"
+            android:layout_marginTop="32dp"
+            android:text="Hello World!"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/gear2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/gear3"
+            android:layout_width="107dp"
+            android:layout_height="78dp"
+            android:layout_alignBottom="@+id/gear2"
+            android:layout_alignStart="@+id/gear1"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintStart_toStartOf="@+id/gear2"
+            app:layout_constraintTop_toTopOf="@+id/gear1"
+            app:srcCompat="@drawable/ic_gear3" />
+
+        <ImageView
+            android:id="@+id/gear2"
+            android:layout_width="110dp"
+            android:layout_height="171dp"
+            android:layout_alignTop="@+id/texto"
+            android:layout_marginTop="57dp"
+            android:layout_toEndOf="@+id/texto"
+            app:layout_constraintBottom_toTopOf="@+id/boton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/gear1"
+            app:layout_constraintTop_toBottomOf="@+id/texto"
+            app:srcCompat="@drawable/ic_gear2" />
+
+        <Button
+            android:id="@+id/boton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="Comenzar"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gear1" />
+
+        <ImageView
+            android:id="@+id/gear1"
+            android:layout_width="120dp"
+            android:layout_height="114dp"
+            android:layout_alignEnd="@+id/boton"
+            android:layout_alignTop="@+id/texto"
+            android:layout_marginTop="13dp"
+            app:layout_constraintBottom_toTopOf="@+id/boton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_gear1" />
+
+        <ProgressBar
+            android:id="@+id/barra"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/boton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/barra"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="27dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
