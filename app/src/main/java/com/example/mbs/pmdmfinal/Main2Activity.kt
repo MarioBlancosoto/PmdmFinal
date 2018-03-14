@@ -40,6 +40,9 @@ class Main2Activity : AppCompatActivity() {
 
             botonf.startAnimation(animacion)
 
+
+            //Añadido listener para poder controlar la animación
+
             animacion.setAnimationListener(object : Animation.AnimationListener{
                 override fun onAnimationRepeat(animation: Animation?) {
 
